@@ -1,4 +1,5 @@
-import Hero from './components/Hero';
+
+import Hero from './components/hero';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import Tech from './components/Tech';
@@ -15,14 +16,13 @@ function App() {
    <main className="flex flex-col items-center px-4 md:px-8 kg:px16">
      <Navbar/> 
      <Hero/>
+     <Tech/>
      <Projects/>
-     <section id="tech">
-          <Tech />
-     <Contact/>
-
-   </main>
+     <Contact/> 
+     </main>
    </>;
 }
+
   
 
 export default App
