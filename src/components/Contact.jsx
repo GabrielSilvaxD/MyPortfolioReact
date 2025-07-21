@@ -13,7 +13,7 @@ const Contact = () => {
       Wanto to chat? send me a e-mail through this bottom and ill get back to you as soon as possible.
 
       </p>
-      <a href="" className="text-nowrap rounded-1g border border-indigo-600 bg-black px-5 py-3 text-1g font-bold text-white shadow-lg shadow-indigo-700 transition-all duration-300 hover:-translate-y-2 hover:shadow-x1 hover:shadow-indigo-600">Contact Me</a>
+      <a href="mailto:gabrielgsilva1995@gmail.com" className="text-nowrap rounded-1g border border-indigo-600 bg-black px-5 py-3 text-1g font-bold text-white shadow-lg shadow-indigo-700 transition-all duration-300 hover:-translate-y-2 hover:shadow-x1 hover:shadow-indigo-600">Contact Me</a>
     </div>
     </div>
 
