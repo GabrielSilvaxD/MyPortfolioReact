@@ -39,7 +39,7 @@ const ProjectCard = ({project}) => {
   return (
     <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
     
-    <img src={project.image} alt="" className="w-full cursor-pointer rounded 2-x1 transition-all duration-300 hover:scale-105 md:w-[300px]"/>
+    <img src={project.image} alt="" className="w-full cursor-pointer rounded 2-x1 transition-all duration-300 hover:scale-105 md:w-[200px] h-[300px] object-cover"/>
       <div className="flex flex-col gap-5">
 
       <div className="flex flex-col gap-3">
@@ -63,7 +63,7 @@ const ProjectCard = ({project}) => {
 
 const Projects = () => {
   return (
-    <div id="Projects" className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px14 md:py14 md:py-24">
+    <div id="Project" className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px14 md:py14 md:py-24">
       <h1 className="text-4x1 font-light text-white md:text-6x1">My Projects</h1>
     
     <div className="flex -w-full max-w-[1000px] flex-col gap-16 text-white">

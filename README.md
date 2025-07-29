@@ -61,4 +61,4 @@ This portfolio is live on Netlify at: https://gabrielsilvaportfolio.netlify.app/
 ## Authors
 
 - [@gabrielsilvaxD](https://www.github.com/gabrielsilvaxD)
-
+p
