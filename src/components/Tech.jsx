@@ -3,7 +3,7 @@ import { BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoPostgresql, BiLogo
 
 const Tech = () => {
   return <div id="Tech" className="flex min-h-[70vh] w-full flex-col items-center justify-center gap-16 md:gap-32">
-    <h1 className="text-4x1 font-light text-white md:text-6x1">Technologies</h1>
+    <h1 className="text-5xl font-bold md:text-7xl bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent">Technologies</h1>
 
       <div className="flex flex-wrap items-center justify-center gap-10 p-5">
         <div>

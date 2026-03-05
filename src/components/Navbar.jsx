@@ -13,8 +13,8 @@ const Navbar = () => {
 
 
   return (
-   <nav className="fixed top-0 z-10 flex w-full items-center justify-between border -b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
-       <a href="#home" className="bg-gradient-to-r from-blue-500 to bg-pink-500 bg-clip-text text-transparent opacity-80 text-3x1 font-semibold transition-all duration-300 hover:opacity-100">Gabriel</a>
+   <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-6 py-6 text-white backdrop-blur-md md:px-16 md:justify-evenly">
+       <a href="#home" className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent opacity-80 text-3xl font-semibold transition-all duration-300 hover:opacity-100">Gabriel</a>
 
 
       <ul className="hidden md:flex gap-10">
@@ -37,25 +37,25 @@ const Navbar = () => {
        </ul>
 
        <ul className="hidden md:flex gap-5">
-        <li className="curson-pointer text-x1 opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
           <a href="https://www.youtube.com/@GabrielSilva-ex4wu/videos" target="_blank" rel="noopener noreferrer">
             <BsYoutube/>
           </a>
         </li>
 
-        <li className="curson-pointer text-x1 opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
           <a href="https://www.linkedin.com/in/gabriel-silva-51356a322/" target="_blank" rel="noopener noreferrer">
             <BsLinkedin/>
           </a>
         </li>
 
-        <li className="curson-pointer text-x1 opacity-70 transition-all duration-300    hover:text-blue-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300    hover:text-blue-500 hover:opacity-100">
           <a href="https://x.com/X_GabrielS" target="_blank" rel="noopener noreferrer">
             <BsTwitterX/>
           </a>
         </li>
 
-        <li className="curson-pointer text-x1 opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
           <a href="https://github.com/GabrielSilvaxD?tab=repositories" target="_blank" rel="noopener noreferrer">
             <BsGithub/>
           </a>
@@ -63,54 +63,54 @@ const Navbar = () => {
        </ul>
 
        {isOpen ? (
-          <BiX className="block md:hidden text-4x1" onClick={menuOpen}/>
+          <BiX className="block md:hidden text-4xl" onClick={menuOpen}/>
         ) : (
-          <BiMenu className="block md:hidden text-4x1"onClick={menuOpen}/>
+          <BiMenu className="block md:hidden text-4xl"onClick={menuOpen}/>
       )}
 
 
       {isOpen && (
-        <div className={`fixed right-0 top-[84px] flex-h-screen w-1/2 flex-col items-start justify-start gap-10 border-1 border-gray-800 dg-black/90 p-12 ${isOpen ? "block" : "hidden"}`}>
+        <div className={`fixed right-0 top-[84px] h-screen w-1/2 flex-col items-start justify-start gap-10 border border-gray-800 bg-black/90 p-12 ${isOpen ? "flex" : "hidden"}`}>
 
           <ul className="flex flex-col gap-8 ">
-        <a href="#Home" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+        <a href="#home" onClick={menuOpen} className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
           <li>Home</li>
         </a>
 
-         <a href="#Tech" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+         <a href="#Tech" onClick={menuOpen} className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
            <li>Tech</li>
           </a>
 
-         <a href="#Project" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+         <a href="#Project" onClick={menuOpen} className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
            <li>Project</li>
         </a>
 
-         <a href="#Contact" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+         <a href="#Contact" onClick={menuOpen} className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
             <li>Contact</li>
           </a>
 
           </ul>
 
           <ul className="flex flex-wrap gap-5">
-        <li className="curson-pointer text-x1 opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
           <a href="https://www.youtube.com/@GabrielSilva-ex4wu/videos" target="_blank" rel="noopener noreferrer">
             <BsYoutube/>
           </a>
         </li>
 
-        <li className="curson-pointer text-x1 opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
           <a href="https://www.linkedin.com/in/gabriel-silva-51356a322/" target="_blank" rel="noopener noreferrer">
             <BsLinkedin/>
           </a>
         </li>
 
-        <li className="curson-pointer text-x1 opacity-70 transition-all duration-300    hover:text-blue-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300    hover:text-blue-500 hover:opacity-100">
           <a href="https://x.com/X_GabrielS" target="_blank" rel="noopener noreferrer">
             <BsTwitterX/>
           </a>
         </li>
 
-        <li className="curson-pointer text-x1 opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
+        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
           <a href="https://github.com/GabrielSilvaxD?tab=repositories" target="_blank" rel="noopener noreferrer">
             <BsGithub/>
           </a>
